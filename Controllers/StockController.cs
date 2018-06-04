@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebCoreMvcFromScratch.Models;
 using WebCoreMvcFromScratch.Services;
+using WebCoreMvcFromScratch.ViewModels;
 
 namespace WebCoreMvcFromScratch.Controllers
 {
@@ -13,8 +14,8 @@ namespace WebCoreMvcFromScratch.Controllers
         }
         public IActionResult Index()
         {
-            var model = _stockData.GetStocks();
-
+            var model = new StockViewModel();
+            model.Stocks = _stockData.GetStocks();
             return View(model);
         }
     }

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WebCoreMvcFromScratch.Models.Stock>
+﻿@model WebCoreMvcFromScratch.ViewModels.StockViewModel
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -6,11 +6,19 @@
 </head>
 <body>
     <table>
-        
-        @foreach(var s in Model)
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Code</th>
+            <th>Price</th>
+        </tr>
+        @foreach(var s in Model.Stocks)
         {
             <tr>
-                <td>s.</td>
+                <td>@s.Id</td>
+                <td>@s.Name</td>
+                <td>@s.Code</td>
+                <td>@s.Price</td>
             </tr>
         }
     </table>
