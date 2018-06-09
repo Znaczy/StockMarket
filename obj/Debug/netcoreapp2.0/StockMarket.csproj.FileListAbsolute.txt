@@ -1,0 +1,10 @@
+C:\VsRepos\WebCoreMvcFromScratch\WebCoreMvcFromScratch\bin\Debug\netcoreapp2.0\StockMarket.deps.json
+C:\VsRepos\WebCoreMvcFromScratch\WebCoreMvcFromScratch\bin\Debug\netcoreapp2.0\StockMarket.runtimeconfig.json
+C:\VsRepos\WebCoreMvcFromScratch\WebCoreMvcFromScratch\bin\Debug\netcoreapp2.0\StockMarket.runtimeconfig.dev.json
+C:\VsRepos\WebCoreMvcFromScratch\WebCoreMvcFromScratch\bin\Debug\netcoreapp2.0\StockMarket.dll
+C:\VsRepos\WebCoreMvcFromScratch\WebCoreMvcFromScratch\bin\Debug\netcoreapp2.0\StockMarket.pdb
+C:\VsRepos\WebCoreMvcFromScratch\WebCoreMvcFromScratch\obj\Debug\netcoreapp2.0\StockMarket.csproj.CoreCompileInputs.cache
+C:\VsRepos\WebCoreMvcFromScratch\WebCoreMvcFromScratch\obj\Debug\netcoreapp2.0\StockMarket.AssemblyInfoInputs.cache
+C:\VsRepos\WebCoreMvcFromScratch\WebCoreMvcFromScratch\obj\Debug\netcoreapp2.0\StockMarket.AssemblyInfo.cs
+C:\VsRepos\WebCoreMvcFromScratch\WebCoreMvcFromScratch\obj\Debug\netcoreapp2.0\StockMarket.dll
+C:\VsRepos\WebCoreMvcFromScratch\WebCoreMvcFromScratch\obj\Debug\netcoreapp2.0\StockMarket.pdb

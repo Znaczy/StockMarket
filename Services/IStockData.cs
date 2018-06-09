@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using WebCoreMvcFromScratch.Models;
+﻿using StockMarket.ViewModels;
 
-namespace WebCoreMvcFromScratch.Services
+namespace StockMarket.Services
 {
     public interface IStockData
     {
-        IEnumerable<Stock> GetStocks();
+        StocksListViewModel GetAllStocks();
     }
 }

@@ -1,4 +1,4 @@
-namespace WebCoreMvcFromScratch.Controllers
+namespace StockMarket.Controllers
 {
     public class AboutController
     {

@@ -1,0 +1,27 @@
+﻿@model UserAccountEditModel
+
+@{
+    ViewBag.Title = "Create user account";
+}
+
+<form method="post">
+
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div>
+        <label asp-for="Surname"></label>
+        <input asp-for="Surname" />
+        <span asp-validation-for="Surname"></span>
+    </div>
+    <div>
+        <label asp-for="Money"></label>
+        <input asp-for="Money" />
+        <span asp-validation-for="Money"></span>
+    </div>
+    <input type="submit" name="save" value="Save" />
+</form>
+
+<a asp-action="index">go back</a>

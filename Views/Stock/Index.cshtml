@@ -1,26 +1,26 @@
-﻿@model WebCoreMvcFromScratch.ViewModels.StockViewModel
+﻿@model StocksListViewModel
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-</head>
-<body>
-    <table>
+@{
+    ViewBag.Title = "Stocks";
+}
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Price</th>
+        <th>Unit</th>
+        <th>Last trade time</th>
+    </tr>
+    @foreach (var s in Model.Stocks)
+    {
         <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Code</th>
-            <th>Price</th>
+            <td>@s.Id</td>
+            <td>@s.Price</td>
+            <td>@s.Unit</td>
+            <td>@s.LastTradeTime</td>
         </tr>
-        @foreach(var s in Model.Stocks)
-        {
-            <tr>
-                <td>@s.Id</td>
-                <td>@s.Name</td>
-                <td>@s.Code</td>
-                <td>@s.Price</td>
-            </tr>
-        }
-    </table>
-</body>
-</html>
+    }
+</table>
+
+<a asp-action="Index" asp-controller="home">Home</a>
+

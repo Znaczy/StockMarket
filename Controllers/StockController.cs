@@ -1,21 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebCoreMvcFromScratch.Models;
-using WebCoreMvcFromScratch.Services;
-using WebCoreMvcFromScratch.ViewModels;
+using StockMarket.Services;
 
-namespace WebCoreMvcFromScratch.Controllers
+namespace StockMarket.Controllers
 {
     public class StockController : Controller
     {
         private readonly IStockData _stockData;
+
         public StockController(IStockData stockData)
         {
             _stockData = stockData;
         }
+
         public IActionResult Index()
         {
-            var model = new StockViewModel();
-            model.Stocks = _stockData.GetStocks();
+            var model = _stockData.GetAllStocks();
+
             return View(model);
         }
     }

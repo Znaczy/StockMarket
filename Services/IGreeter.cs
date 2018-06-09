@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace WebCoreMvcFromScratch.Services
+namespace StockMarket.Services
 {
     public interface IGreeter
     {

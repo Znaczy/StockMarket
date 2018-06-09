@@ -1,0 +1,27 @@
+﻿@model UserAccountsListViewModel
+
+@{
+    ViewBag.Title = "User accounts";
+}
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Balance</th>
+    </tr>
+
+    @foreach (var ua in Model.UserAccounts)
+    {
+        <tr>
+            <td>@ua.Id</td>
+            <td>@ua.Name</td>
+            <td>@ua.Surname</td>
+            <td>@ua.Money</td>
+        </tr>
+    }
+
+</table>
+
+<a asp-action="create" asp-controller="userAccount">Create user account</a>

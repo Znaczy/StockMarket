@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace WebCoreMvcFromScratch.Controllers
+namespace StockMarket.Controllers
 {
     public class HomeController : Controller
     {
